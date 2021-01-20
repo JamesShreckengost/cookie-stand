@@ -49,11 +49,23 @@ Location.prototype.cookieSalesPerDay = function() {
 // Now we can build are list
 // create a prototype function that renders the location to the DOM.
 Location.prototype.render = function() {
-   for (var i = 0; i < arrayofLocations.length; i++){
-      var domElement = document.createElement('dom');
-      domElement.textContent = dom;
-      domElement.appendChild(dom);
-   }
+
+   var locationVariable = document.getElementById('dom');
+
+   var myNewElement = document.createElement('p');
+
+      myNewElement.textContent = 'Location: '
+      // or
+      myNewElement.textContent = arrayofLocations.Location;
+
+   locationVariable.appendChild(myNewElement)
+
+
+}
+   
+for (var i = 0; i < arrayofLocations.length; i++) {
+   myNewElement.textContent = arrayofLocations[i].otherPropertyValue
+
 }
 
 // get element by id div
@@ -61,64 +73,19 @@ var divElement = document.getElementById('div');
 var h2Element = document.createElement('h2');
 h2Element.textContent = this.locationName;
 divElement.appendChild(h2Element);
-var ulElement = document.createElement('ul')
+var trElement = document.createElement('tr')
 
 for (var i = 0; i < this.locationDailySales.length; i++) {
-   var liElement = document.createElement('li');
-   liElement.textContent = thislocationDailysales[i];
-   ulElement.appendChild(liElement);
+   var tdElement = document.createElement('td');
+   tdElement.textContent = thislocationDailysales[i];
+   trElement.appendChild(tdElement);
    // populate li with locationDailySales[i]
    // append li to the ul
 }
-   divElement.appendChild(ulElement);
-// append the ul to the div
-
-// passing a store into our function
-//    generateCookiesPerHour(minCust, maxCust) {
-//     return Math.floor(Math.random() * (maxCust - minCust + 1) + minCust);
-//    }
-// }
-// generateCookiesPerHour(6,25)
+   trElement.appendChild(tdElement);
 
 
 
 
 
 
-
-
-var Tokyo = {
-
-
-
-
-
-
-}
-
-var Dubai = {
-
-
-
-
-
-
-}
-
-var Paris = {
-
-
-
-
-
-}
-
-
-var Lima = {
-
-
-
-
-
-
-}
