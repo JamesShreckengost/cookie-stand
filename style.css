@@ -1,0 +1,34 @@
+body {
+  background-color: aqua;
+  margin: 30px;
+
+}
+
+h2 {
+  color: black;
+  
+}
+
+table {
+  background-color:orange;
+  color: orange;
+  border: thin black 30px;
+
+
+}
+
+tbody {
+  border: thin black;
+}
+
+tr {
+  border:black;
+
+}
+
+td {
+  background-color: black;
+  padding: 10px;
+
+
+}
